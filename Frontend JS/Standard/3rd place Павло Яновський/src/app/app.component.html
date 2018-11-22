@@ -1,0 +1,36 @@
+<div>DevChallenge 1101 - Final</div>
+
+<!-- Список запитать з можливістю редагування (використовується DevExtreme) -->
+<dx-data-grid
+    id='wordsLibraryDataGrid'
+    #wordsLibraryDataGrid
+    columnResizingMode="widget"
+    [rowAlternationEnabled]="true"
+    [dataSource]='wordsLibrary'
+    [showBorders]='true'
+    [allowColumnResizing]='true'
+    noDataText="Немає даних"
+    height='300'
+    >
+    <dxo-pager
+        [visible] = "true"
+        [showPageSizeSelector]="true"
+        [allowedPageSizes]="[10, 20, 50]"
+        [showNavigationButtons]="true">
+    </dxo-pager>
+    <dxo-editing
+    [allowDeleting]="true"
+    [allowAdding]="true"
+    [allowUpdating]="true"
+    [texts]="{addRow:'Додати', editRow:'Редагувати', deleteRow:'Видалити', confirmDeleteMessage:'Ви впевнені, що хочете видалити це питання?'}">
+    </dxo-editing>
+</dx-data-grid>
+
+<div>
+    <button mat-raised-button color="primary" (click)="rebuildCW()">Перебудувати кроссворд</button>
+</div>
+
+<!-- місце для кроссворду -->
+<div style='display: flex; justify-content: center;'>
+    <canvas id="my-canvas" width="300px" height="300px"></canvas>
+</div>
