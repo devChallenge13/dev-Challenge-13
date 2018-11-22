@@ -1,0 +1,54 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+  - db/**/*
+  - bin/*
+
+Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/BlockLength:
+  Exclude:
+  - config/routes.rb
+  - lib/capistrano/tasks/deploy.rake
+  - app/admin/*.rb
+  - spec/**/*.rb
+
+Lint/HandleExceptions:
+  Exclude:
+  - bin/rails
+  - bin/rake
+
+Style/ExpandPathArguments:
+  Enabled: false
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Metrics/LineLength:
+  Max: 125
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/AbcSize:
+  Max: 30
+
+Naming/UncommunicativeMethodParamName:
+  Enabled: false
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Lint/BooleanSymbol:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
+
+Style/SymbolArray:
+  Enabled: false
+

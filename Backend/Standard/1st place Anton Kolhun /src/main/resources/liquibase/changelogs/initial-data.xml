@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        logicalFilePath="changelogs/initial-data.xml"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+
+
+    <changeSet author="undisclosed" id="create-tournament-table">
+        <createTable tableName="TOURNAMENT">
+            <column name="TOURNAMENT_ID" type="varchar(40)">
+                <constraints primaryKey="true" primaryKeyName="pk_tournament"/>
+            </column>
+            <column name="TOURNAMENT_NAME" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="TEAM_NUMBER" type="integer">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet author="undisclosed" id="create-result-table">
+        <createTable tableName="MATCH_SCHEDULE">
+            <column name="MATCH_SCHEDULE_ID" type="varchar(40)">
+                <constraints primaryKey="true" primaryKeyName="pk_match_schedule"/>
+            </column>
+
+            <column name="TOURNAMENT_ID" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="TEAM_NAME" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="OPPONENT_NAME" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="ROUND" type="integer"/>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet author="undisclosed" id="fk_schedule_tournament">
+        <addForeignKeyConstraint baseColumnNames="TOURNAMENT_ID"
+                                 baseTableName="MATCH_SCHEDULE"
+                                 constraintName="fk_schedule_tournament"
+                                 referencedColumnNames="TOURNAMENT_ID"
+                                 referencedTableName="TOURNAMENT"/>
+
+
+    </changeSet>
+
+
+
+    <changeSet author="undisclosed" id="create-match_result-table">
+        <createTable tableName="MATCH_RESULT">
+            <column name="MATCH_RESULT_ID" type="varchar(40)">
+                <constraints primaryKey="true" primaryKeyName="pk_result"/>
+            </column>
+            <column name="MATCH_SCHEDULE_ID" type="varchar(40)"/>
+            <column name="TEAM_NAME" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="OPPONENT_NAME" type="varchar(40)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="SCORE" type="varchar(40)"/>
+            <column name="POINTS" type="integer"/>
+            <column name="MATCH_LOCATION" type="varchar(40)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet author="undisclosed" id="fk_match_result">
+        <addForeignKeyConstraint baseColumnNames="MATCH_SCHEDULE_ID"
+                                 baseTableName="MATCH_RESULT"
+                                 constraintName="fk_team_id"
+                                 referencedColumnNames="MATCH_SCHEDULE_ID"
+                                 referencedTableName="MATCH_SCHEDULE"/>
+
+    </changeSet>
+
+
+</databaseChangeLog>

@@ -1,0 +1,18 @@
+section.payment
+	.heading
+		h2.heading__title Payment method
+		.heading__description
+			p All transactions are secure and encrypted
+	.card.payment__card
+		span.card__title Credit card
+			img(src="img/b-icon.png", alt="B")
+		.card__content.card__content_darker
+			.flex.payment__flex
+				.flex__item.flex-12
+					input(type="text", placeholder="Card number").card__input
+				.flex__item.flex-6
+					input(type="text", placeholder="Cardholder name").card__input
+				.flex__item.flex-3
+					input(type="text", placeholder="MM / YY").card__input
+				.flex__item.flex-3
+					input(type="text", placeholder="CVV").card__input

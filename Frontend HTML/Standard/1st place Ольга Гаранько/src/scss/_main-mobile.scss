@@ -1,0 +1,20 @@
+@media screen and (max-width: 1279px) {
+	h1{
+		padding: 0 0 65px 46px;
+	}
+}
+@media screen and (max-width: 839px) {
+	h1{
+		@include fsize(24px);
+		padding: 0 0 45px 46px;
+	}
+}
+@media screen and (max-width: 599px) {
+	h1{
+		@include fsize(24px);
+		padding-left: 0;
+		&:before{
+			display: none;
+		}
+	}
+}

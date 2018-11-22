@@ -1,0 +1,37 @@
+.header {
+  background: $white;
+  color:$black;
+}
+
+.title{
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  width:100%;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.bar{
+  border-bottom:2px solid $grey;
+  display:flex;
+  justify-content: flex-end;
+
+  &__item{
+    padding:10px 45px 10px 45px;
+    &:nth-child(1){
+    margin-right: auto;
+  }
+    font-weight:bold;
+  }
+}
+
+@media screen and (max-width: $screen-md) {
+  .bar__item {
+    padding:10px 30px;
+  }
+}
+
+
+
+

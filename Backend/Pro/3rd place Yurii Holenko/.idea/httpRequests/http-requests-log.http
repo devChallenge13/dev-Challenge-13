@@ -1,0 +1,394 @@
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T035645.200.txt
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T035641.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T035311.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T035303.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034754.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034452.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034337.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034152.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034124.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034111.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T034055.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T031457.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T030720.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T030652.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T024352.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T024347.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T024037.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T023928.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T023913.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T023747.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T023337.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/scores?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T021702.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T020653.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T020642.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/league/schedule?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T020559.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T014716.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/league?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T013848.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments/?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T013359.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments/?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T013201.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/5?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T011418.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/5?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T011407.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/5?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T011256.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/5?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T011241.500.html
+
+###
+
+GET http://localhost:3000/api/tournaments/5?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T011156.200.json
+
+###
+
+GET http://localhost:3000/api/tournaments/5?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T010145.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T125927.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T125811.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T125632.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T125443.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124906.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124839.200.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124826.500.html
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124731.422.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124657.422.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124530.422.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124455.422.json
+
+###
+
+POST http://localhost:3000/api/tournaments?tournament_name=league&team_names[]=A&team_names[]=B&team_names[]=C&team_names[]=D
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-11-17T124428.422.json
+
+###
+

@@ -1,0 +1,7 @@
+.heading {
+	margin-bottom: 27px;
+
+	&__title {
+		margin-bottom: 10px;
+	}
+}

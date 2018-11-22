@@ -1,0 +1,24 @@
+section.shipping-address
+	.heading
+		h2.heading__title Shipping address
+	.card.shipping-address__card.card_no-border
+		.card__content
+			.flex.card__grid
+				.flex__item.flex-6
+					input(type="text", placeholder="First name (optional)").card__input
+				.flex__item.flex-6
+					input(type="text", placeholder="Last name").card__input
+				.flex__item.flex-12
+					input(type="text", placeholder="Address").card__input
+				.flex__item.flex-12
+					input(type="text", placeholder="Apartment, suite, etc (optional)").card__input
+				.flex__item.flex-12
+					input(type="text", placeholder="City").card__input
+				.flex__item.flex-6
+					select.card__select
+						option(value="Ukraine") Ukraine
+						option(value="USA") USA
+				.flex__item.flex-6
+					input(type="text", placeholder="Postal code").card__input
+			input(type="checkbox").card__checkbox#shipping-address
+			label(for="shipping-address").card__label Save this information for next time

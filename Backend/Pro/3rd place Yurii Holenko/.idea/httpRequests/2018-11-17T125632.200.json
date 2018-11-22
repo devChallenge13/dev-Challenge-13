@@ -1,0 +1,32 @@
+{
+  "data": {
+    "id": 3,
+    "name": "league",
+    "rounds": [
+      {
+        "id": 13,
+        "sequential_number": 1
+      },
+      {
+        "id": 14,
+        "sequential_number": 4
+      },
+      {
+        "id": 15,
+        "sequential_number": 2
+      },
+      {
+        "id": 16,
+        "sequential_number": 5
+      },
+      {
+        "id": 17,
+        "sequential_number": 3
+      },
+      {
+        "id": 18,
+        "sequential_number": 6
+      }
+    ]
+  }
+}

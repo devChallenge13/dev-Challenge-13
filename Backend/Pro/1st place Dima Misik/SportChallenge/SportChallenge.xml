@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SportChallenge</name>
+    </assembly>
+    <members>
+        <member name="T:SportChallenge.Controllers.GameController">
+            <summary>
+            Game controller
+            </summary>
+        </member>
+        <member name="M:SportChallenge.Controllers.GameController.SaveResult(System.String,SportChallenge.Models.SaveResultModel)">
+            <summary>
+            Post game result
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <param name="saveResultModel">Game result</param>
+            <returns>Ok</returns>
+        </member>
+        <member name="T:SportChallenge.Controllers.TournamentController">
+            <summary>
+            Tournament controller
+            </summary>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.CreateTournament(SportChallenge.Models.TournamentCreateModel)">
+            <summary>
+            Create tournament
+            </summary>
+            <param name="model">Includes tournament name and teams number</param>
+            <returns></returns>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.GetTournament(System.String)">
+            <summary>
+            Get tournament information in JSON (all games)
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <returns></returns>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.GetPlayedTournament(System.String)">
+            <summary>
+            Get tournament information in JSON (only played games)
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <returns></returns>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.GetPlanedTournament(System.String)">
+            <summary>
+            Get tournament information in JSON (only planned games)
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <returns></returns>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.GetTournamentTable(System.String)">
+            <summary>
+            Get tournament information in JSON (table format)
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <returns></returns>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.ToCsv(System.String)">
+            <summary>
+            Returns tournament CSV
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <returns></returns>
+        </member>
+        <member name="M:SportChallenge.Controllers.TournamentController.FromCsv(System.String)">
+            <summary>
+            Update tournament using CSV
+            </summary>
+            <param name="tournamentName">Tournament name</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=DESKTOP-RT3FPJK\\SQLEXPRESS;Database=SportChallenge.Tests;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "data": {
+    "id": 1,
+    "name": "league",
+    "rounds": [
+      {
+        "id": 1,
+        "sequential_number": 1,
+        "games": [
+          {
+            "id": 1,
+            "finished": false,
+            "home_team": {
+              "id": 1,
+              "name": "A"
+            },
+            "guest_team": {
+              "id": 4,
+              "name": "D"
+            }
+          },
+          {
+            "id": 3,
+            "finished": false,
+            "home_team": {
+              "id": 2,
+              "name": "B"
+            },
+            "guest_team": {
+              "id": 3,
+              "name": "C"
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "sequential_number": 4,
+        "games": [
+          {
+            "id": 2,
+            "finished": false,
+            "home_team": {
+              "id": 4,
+              "name": "D"
+            },
+            "guest_team": {
+              "id": 1,
+              "name": "A"
+            }
+          },
+          {
+            "id": 4,
+            "finished": false,
+            "home_team": {
+              "id": 3,
+              "name": "C"
+            },
+            "guest_team": {
+              "id": 2,
+              "name": "B"
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "sequential_number": 2,
+        "games": [
+          {
+            "id": 5,
+            "finished": false,
+            "home_team": {
+              "id": 1,
+              "name": "A"
+            },
+            "guest_team": {
+              "id": 3,
+              "name": "C"
+            }
+          },
+          {
+            "id": 7,
+            "finished": false,
+            "home_team": {
+              "id": 4,
+              "name": "D"
+            },
+            "guest_team": {
+              "id": 2,
+              "name": "B"
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "sequential_number": 5,
+        "games": [
+          {
+            "id": 6,
+            "finished": false,
+            "home_team": {
+              "id": 3,
+              "name": "C"
+            },
+            "guest_team": {
+              "id": 1,
+              "name": "A"
+            }
+          },
+          {
+            "id": 8,
+            "finished": false,
+            "home_team": {
+              "id": 2,
+              "name": "B"
+            },
+            "guest_team": {
+              "id": 4,
+              "name": "D"
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "sequential_number": 3,
+        "games": [
+          {
+            "id": 9,
+            "finished": false,
+            "home_team": {
+              "id": 1,
+              "name": "A"
+            },
+            "guest_team": {
+              "id": 2,
+              "name": "B"
+            }
+          },
+          {
+            "id": 11,
+            "finished": false,
+            "home_team": {
+              "id": 3,
+              "name": "C"
+            },
+            "guest_team": {
+              "id": 4,
+              "name": "D"
+            }
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "sequential_number": 6,
+        "games": [
+          {
+            "id": 10,
+            "finished": false,
+            "home_team": {
+              "id": 2,
+              "name": "B"
+            },
+            "guest_team": {
+              "id": 1,
+              "name": "A"
+            }
+          },
+          {
+            "id": 12,
+            "finished": false,
+            "home_team": {
+              "id": 4,
+              "name": "D"
+            },
+            "guest_team": {
+              "id": 3,
+              "name": "C"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

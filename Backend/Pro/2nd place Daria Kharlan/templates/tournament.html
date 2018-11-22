@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ tournament.name }}</title>
+</head>
+<body>
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    table, th, td {
+       border: 1px solid black;
+        padding: 5px;
+    }
+</style>
+{% if results %}
+    <table>
+        <thead>
+        <tr>
+            <th>Team</th>
+            <th>Total games played</th>
+            <th>Win</th>
+            <th>Draw</th>
+            <th>Loose</th>
+            <th>Points</th>
+        </tr>
+
+        </thead>
+    <tbody>
+    {% for r in results %}
+        <tr>
+            <td>{{ r['team'] }}</td>
+            <td>{{ r['total_games_played'] }}</td>
+            <td>{{ r['win'] }}</td>
+            <td>{{ r['draw'] }}</td>
+            <td>{{ r['loose'] }}</td>
+            <td>{{ r['points'] }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endif %}
+<br>
+<br>
+<br>
+<table>
+    {% for rnd, games in games_by_rounds.items() %}
+        <tr><td><b>Round {{ rnd }}</b></td></tr>
+        {% for game in games %}
+            <tr>
+                <td>{{ game.home_team.name }}</td>
+                <td>{{ game.guest_team.name }}</td>
+            <td>
+                {% if game.home_team_result %}
+                    {{ game.home_team_result }}
+
+                {% endif %}
+            </td>
+            </tr>
+        {% endfor %}
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,9 @@
+swagger: '2.0'
+info:
+  version: '1'
+  title: FootballApi
+basePath: /api
+consumes:
+  - application/json
+produces:
+  - application/json

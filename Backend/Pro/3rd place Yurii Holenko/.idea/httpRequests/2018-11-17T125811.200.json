@@ -1,0 +1,80 @@
+{
+  "data": {
+    "id": 4,
+    "name": "league",
+    "rounds": [
+      {
+        "id": 19,
+        "sequential_number": 1,
+        "games": [
+          {
+            "id": 37
+          },
+          {
+            "id": 39
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "sequential_number": 4,
+        "games": [
+          {
+            "id": 38
+          },
+          {
+            "id": 40
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "sequential_number": 2,
+        "games": [
+          {
+            "id": 41
+          },
+          {
+            "id": 43
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "sequential_number": 5,
+        "games": [
+          {
+            "id": 42
+          },
+          {
+            "id": 44
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "sequential_number": 3,
+        "games": [
+          {
+            "id": 45
+          },
+          {
+            "id": 47
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "sequential_number": 6,
+        "games": [
+          {
+            "id": 46
+          },
+          {
+            "id": 48
+          }
+        ]
+      }
+    ]
+  }
+}

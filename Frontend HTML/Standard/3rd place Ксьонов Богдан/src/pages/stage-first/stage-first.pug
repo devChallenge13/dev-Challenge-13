@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+		link(rel="stylesheet", href="css/main.min.css")
+		link(rel="stylesheet", href="css/stage-first.min.css")
+	body
+		.wrapper
+			.container
+				.flex.flex_no-gap.flex-column-reverse-992
+					include ../../modules/unifo/unifo.pug 
+					+unifo('< Return to cart', 'Continue to shipping method')
+						ul.breadcrumbs.unifo__breadcrumbs
+							li.breadcrumbs__item
+								a(href="#").breadcrumbs__link Cart
+							li.breadcrumbs__item.breadcrumbs__item_active Customer information
+							li.breadcrumbs__item Shipping method
+							li.breadcrumbs__item Payment method
+						include ../../modules/contact/contact.pug
+						include ../../modules/shipping-address/shipping-address.pug
+					include ../../modules/side-cart/side-cart.pug

@@ -1,0 +1,42 @@
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -13px;
+	margin-bottom: -13px;
+
+	&_no-gap {
+		margin-right: 0;
+		margin-bottom: 0;
+
+		> .flex__item {
+			padding-right: 0;
+			margin-bottom: 0;
+		}
+	}
+
+	&_no-wrap {
+		flex-wrap: nowrap;
+	}
+
+	&__item {
+		margin-bottom: 12px;
+		padding-right: 13px;
+	}
+}
+
+.flex-direction-column {
+	flex-direction: column;
+}
+
+.flex-items-center {
+	align-items: center;
+}
+
+@media (max-width: 991px) {
+	.flex-column-reverse-992 {
+		flex-direction: column-reverse;
+	}
+}
+
+@import 'flex-12/flex-12.css';
+@import 'flex-12/flex-custom.css';

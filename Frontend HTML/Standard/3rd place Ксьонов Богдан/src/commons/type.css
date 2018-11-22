@@ -1,0 +1,47 @@
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Arial';
+	font-size: 1.4rem;
+	color: $text-color;
+}
+
+p {
+}
+
+a {
+	color: #1990d1;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+label {
+	font-size: 1.4rem;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 400;
+}
+
+.heading {
+	&__description {
+		color: #545454;
+	}
+}
+
+.breadcrumbs {
+	color: $secondary-color;
+
+	&__item_active {
+		color: $text-color;
+	}
+}
+
+.button {
+	font-size: 1.6rem;
+}

@@ -1,0 +1,25 @@
+version: '2.3'
+services:
+  postgres:
+    hostname: postgres
+    image: postgres:9.5
+    environment:
+    - POSTGRES_USER=user
+    - POSTGRES_PASSWORD=password
+    - POSTGRES_DB=postgres
+    ports:
+    - 5432:5432
+    volumes:
+    - ./data/pgdata/master:/var/lib/postgresql/data
+    - ./conf/pginit:/docker-entrypoint-initdb.d
+
+  tournament:
+    build: ./tournament
+    image: tournament
+    entrypoint: /bin/sh -c "./wait-for-it.sh postgres:5432 -t 30 && ./start.sh"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/tournament
+    ports:
+    - 8080:8080
+    depends_on:
+    - postgres

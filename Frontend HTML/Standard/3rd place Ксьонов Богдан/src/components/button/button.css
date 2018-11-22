@@ -1,0 +1,30 @@
+$btn-color: #1990c6 !default;
+
+.button {
+	font: inherit;
+	cursor: pointer;
+	display: inline-flex;
+	min-height: 1em;
+	outline: 0;
+	border: 2px solid $btn-color;
+	border-radius: 5px;
+	background: $btn-color;
+	color: #fff;
+	padding: 21px 25px;
+	transition: all ease .3s;
+	text-shadow: none;
+	line-height: 1em;
+	text-align: center;
+	text-decoration: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.button:hover, .button:focus {
+	background: none;
+	border-color: $btn-color;
+	color: $btn-color;
+}

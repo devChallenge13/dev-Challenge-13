@@ -1,0 +1,11 @@
+tags:
+- Tournament
+description: Tournament Scores
+parameters:
+  - name: tournament_name
+    in: path
+    type: integer
+    required: true
+responses:
+  '200':
+    description: Return Tournament scores

@@ -1,0 +1,11 @@
+.contact {
+	margin-bottom: 50px;
+
+	&__card {
+		margin-bottom: 13px;
+		
+		.card__select {
+			border: 0;
+		}
+	}
+}

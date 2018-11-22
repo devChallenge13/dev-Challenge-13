@@ -1,0 +1,41 @@
+.main_index{
+	padding: 30px 15px;
+}
+.total {
+	border-bottom: 1px solid rgba($textColor, 0.1);
+	padding: 20px 0;
+	font-size: 16px;
+	&__item{
+		display: flex;
+		justify-content: space-between;
+		&:last-child{
+			.total__num{
+				color: $toneColor;
+			}
+		}
+	}
+	&__name{
+		font-weight: 700;
+	}
+}
+.note{
+	padding: 20px 0;
+	.input{
+		width: 100%;
+	}
+}
+.info{
+	margin-bottom: 10px;
+	background-color: #fff5c3;
+	border: 1px solid #edd870;
+	color: #85741f;
+	padding: 10px;
+}
+.buttons{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-top: 1px solid rgba($textColor, 0.1);
+	border-bottom: 1px solid rgba($textColor, 0.1);
+	padding: 20px 0;
+}

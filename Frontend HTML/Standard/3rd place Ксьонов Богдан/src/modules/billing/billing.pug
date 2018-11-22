@@ -1,0 +1,29 @@
+section.billing
+	.heading
+		h2.heading__title Billing address
+	.card
+		.card__item.card__item_underlined
+			input(type="radio", name="billing" checked)#billing__same.card__radio
+			label(for="billing__same").card__label Same as shipping address
+		.card__item.card__item_underlined
+			input(type="radio", name="billing")#billing__different.card__radio
+			label(for="billing__different").card__label Use a different shipping address
+		.card__content.card__content_darker
+			.flex
+				.flex__item.flex-6
+					input(type="text", placeholder="First name (optional)").card__input
+				.flex__item.flex-6
+					input(type="text", placeholder="Last name").card__input
+				.flex__item.flex-12
+					input(type="text", placeholder="Address").card__input
+				.flex__item.flex-12
+					input(type="text", placeholder="Apartment, suite, etc (optional)").card__input
+				.flex__item.flex-12
+					input(type="text", placeholder="City").card__input
+				.flex__item.flex-6
+					select.card__select
+						option(value="Ukraine") Ukraine
+						option(value="USA") USA
+				.flex__item.flex-6
+					input(type="text", placeholder="Postal code").card__input
+		

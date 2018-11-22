@@ -1,0 +1,27 @@
+.grid {
+	display: grid;
+	grid-gap: 15px;
+}
+
+.grid-gap-null {
+	grid-gap: 0;
+}
+
+@import 'variables.css';
+
+@import 'grid-template-12/grid';
+
+@import 'grid-12/grid';
+@import 'grid-12/grid-child';
+
+@import 'grid-12-sm/grid';
+@import 'grid-12-sm/grid-child';
+
+@import 'grid-12-md/grid';
+@import 'grid-12-md/grid-child';
+
+@import 'grid-12-lg/grid';
+@import 'grid-12-lg/grid-child';
+
+@import 'grid-12-xl/grid';
+@import 'grid-12-xl/grid-child';

@@ -1,0 +1,30 @@
+{
+  "name": "devchallenge",
+  "version": "1.0.0",
+  "description": "devchallenge first fight",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build-only": "webpack --mode production",
+    "build": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open",
+    "beautify": "html dist/*.html --indent-size 2",
+    "clear": "del-cli dist"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.5.3",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.1.4",
+    "del-cli": "^1.1.0",
+    "html-cli": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.3",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  }
+}

@@ -1,0 +1,44 @@
+.breadcrumbs {
+  font-size: 14px;
+  margin-bottom: 30px;
+  .item {
+    position: relative;
+    padding-right: 15px;
+    margin-right: 10px;
+    &:after,
+    &:before {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 2px;
+      background: $light-dark;
+      right: 0;
+      top: 50%;
+    }
+
+    &:after {
+      transform: rotate(45deg) translateY(-3px);
+    }
+
+    &:before {
+      transform: rotate(-45deg) translateY(3px);
+    }
+
+    &:not(a) {
+      color: $light-dark;
+    }
+
+    &.active {
+      color: $text;
+    }
+
+    &:last-child {
+      padding-right: 0;
+      margin-right: 0;
+      &:after,
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

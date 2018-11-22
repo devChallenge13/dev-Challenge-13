@@ -1,0 +1,18 @@
+.cell, .cell-input {
+    height: 17px;
+    width: 17px;
+    border: 1px solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.active-cell {
+    background-color: rgba(18,165,41, 0.2);
+}
+
+.rigth-cell {
+    background-color: rgba(150, 30, 41, 0.2);
+}

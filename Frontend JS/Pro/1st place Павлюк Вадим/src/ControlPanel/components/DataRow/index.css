@@ -1,0 +1,7 @@
+.data-row-wrapper {
+    display: flex;
+}
+
+.question-input {
+    width: 400px;
+}

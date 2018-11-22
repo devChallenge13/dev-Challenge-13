@@ -1,0 +1,24 @@
+.all-information {
+	&__card {
+		margin-bottom: 50px;
+
+		.card__content {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+		
+		.card__property {
+			color: $secondary-color;
+		}
+
+		.card__item {
+			padding: 0;
+		}
+
+		.card__item:not(:last-child) {
+			margin-bottom: 16px;
+			padding-bottom: 16px;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}

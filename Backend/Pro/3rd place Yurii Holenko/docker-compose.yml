@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    build: .
+    command: bundle exec rails s
+    ports:
+    - 8080:3000

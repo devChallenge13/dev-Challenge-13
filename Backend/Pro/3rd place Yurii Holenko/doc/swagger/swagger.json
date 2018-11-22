@@ -1,0 +1,147 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "FootballApi",
+    "version": "1"
+  },
+  "basePath": "/api",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/games/{game_id}/game_results": {
+      "post": {
+        "tags": [
+          "Game Result"
+        ],
+        "description": "Add Result to existing game",
+        "parameters": [
+          {
+            "name": "game_id",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "home_team_goals",
+            "in": "formData",
+            "description": "Home team scored goals",
+            "required": true,
+            "type": "integer"
+          },
+          {
+            "name": "guest_team_goals",
+            "in": "formData",
+            "description": "Guest team scored goals",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Create Game result"
+          }
+        }
+      }
+    },
+    "/tournaments": {
+      "post": {
+        "tags": [
+          "Tournament"
+        ],
+        "description": "Create Tournament",
+        "parameters": [
+          {
+            "name": "tournament_name",
+            "in": "formData",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "team_names[]",
+            "in": "formData",
+            "description": "Team names",
+            "required": true,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Create tournament with schedule"
+          }
+        }
+      }
+    },
+    "/tournaments/{tournament_name}/schedule": {
+      "get": {
+        "tags": [
+          "Tournament"
+        ],
+        "description": "Tournament schedule",
+        "parameters": [
+          {
+            "name": "tournament_name",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return Tournament schedule"
+          }
+        }
+      }
+    },
+    "/tournaments/{tournament_name}/scores": {
+      "get": {
+        "tags": [
+          "Tournament"
+        ],
+        "description": "Tournament Scores",
+        "parameters": [
+          {
+            "name": "tournament_name",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return Tournament scores"
+          }
+        }
+      }
+    },
+    "/tournaments/{tournament_name}": {
+      "get": {
+        "tags": [
+          "Tournament"
+        ],
+        "description": "Tournament schedule",
+        "parameters": [
+          {
+            "name": "tournament_name",
+            "in": "path",
+            "required": true,
+            "type": "integer"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Return Tournament schedule"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+  }
+}

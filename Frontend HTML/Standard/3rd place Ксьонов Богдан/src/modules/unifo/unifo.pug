@@ -1,0 +1,10 @@
+mixin unifo (link, btn)
+	section.unifo
+		.heading
+			h1.heading__title Unifo
+		if block
+			block
+		.unifo__actions
+			a(href="#")= link
+			button.button= btn
+		include ../footer/footer.pug

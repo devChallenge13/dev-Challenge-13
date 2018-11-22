@@ -1,0 +1,224 @@
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus {
+	outline: none;
+}
+input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+	-webkit-appearance: none;
+	border: 0 none;
+}
+input.input{
+	border: 1px solid rgba($textColor, 0.1);
+	background-color: transparent;
+	font-family: $mainFont, "Arial", sans-serif;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+.input_custom, .input_custom_image {
+	padding-left: 30px;
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	line-height: 24px;
+	font-size: 16px;
+	color: rgba($textColor, 0.5);
+	font-size: 14px;
+}
+.input_custom input, .input_custom_image input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+.input_custom-indicator {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #f0f0f0;
+	border: solid 2px #dbdbdb;
+	border-radius: 5px;
+}
+.is_custom_radio .input_custom-indicator {
+	border-radius: 50%;
+}
+.input_custom-indicator::before {
+	content: '';
+	border-radius: inherit;
+	background-color: $toneColor;
+	position: absolute;
+	left: -2px;
+	top: -2px;
+	bottom: -2px;
+	right: -2px;
+	-webkit-transition: opacity 0.3s ease;
+	transition: opacity 0.3s ease;
+	opacity: 0;
+}
+.input_custom input:checked ~ .input_custom-indicator::before, .input_custom_image input:checked ~ .input_custom-indicator::before {
+	opacity: 1;
+}
+.input_custom-indicator::after {
+	content: '';
+	position: absolute;
+	opacity: 0;
+	-webkit-transform: scale(0.5) rotate(45deg);
+	transform: scale(0.5) rotate(45deg);
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+.is_custom_radio .input_custom-indicator::after, .input_custom_image .input_custom-indicator::after {
+	width: 6px;
+	height: 6px;
+	left: 5px;
+	top: 5px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	-webkit-box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+.is_custom_checkbox .input_custom-indicator::after {
+	top: 2px;
+	left: 5px;
+	width: 4px;
+	height: 8px;
+	border: solid #ffffff;
+	border-top-width: medium;
+	border-right-width: medium;
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-width: 0 2px 2px 0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-webkit-box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 1px 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+.input_custom input:checked ~ .input_custom-indicator::after, .input_custom_image input:checked ~ .input_custom-indicator::after {
+	opacity: 1;
+	-webkit-transform: scale(1) rotate(45deg);
+	transform: scale(1) rotate(45deg);
+}
+input:checked ~ .input_custom_image-text {
+	display: inline-block;
+}
+/*****/
+.input_box {
+	background-color: #e2e2e2;
+	border-radius: 4px;
+	line-height: 48px;
+	margin-top: 20px;
+	height: 48px;
+	border: none;
+	position: relative;
+	padding: 2px;
+	-webkit-transition: background-color 0.3s linear;
+	transition: background-color 0.3s linear;
+}
+.input_box::before {
+	-webkit-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+	content: '';
+	opacity: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	position: absolute;
+	z-index: 1;
+	background-image: -webkit-gradient(linear, right top, left top, from(#6bbd96), to(#33a3cc));
+	background-image: linear-gradient(to left, #6bbd96, #33a3cc);
+	border-radius: 3px;
+	z-index: 1;
+}
+.input_box:focus::before, .input_box:hover::before {
+	opacity: 1;
+}
+.input_box-placeholder {
+	line-height: 16px;
+	font-size: 11px;
+	color: #999999;
+	width: 0;
+	top: -20px;
+	overflow: hidden;
+	white-space: nowrap;
+	-webkit-transition: width 0.2s ease;
+	transition: width 0.2s ease;
+	position: absolute;
+	left: 2px;
+}
+.input_box .input-base:focus ~ .input_box-placeholder {
+	width: 100%;
+}
+.input_box input, .input_box select, .input_box textarea {
+	position: relative;
+	padding: 0 21px;
+	z-index: 3;
+	display: block;
+	width: 100%;
+	min-height: 44px;
+	line-height: 44px;
+	background-color: #f7f7f7;
+	color: #333333;
+	font-size: 16px;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	color: grey;
+	transition: opacity 0.5s ease;
+}
+::-moz-placeholder { /* Firefox 19+ */
+	color: grey;
+	transition: opacity 0.5s ease;
+}
+:-ms-input-placeholder { /* IE 10+ */
+	color: grey;
+	transition: opacity 0.5s ease;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: grey;
+	transition: opacity 0.5s ease;
+}
+.input_box .input-base:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	opacity: 0;
+}
+.input_box .input-base:focus::-moz-placeholder { /* Firefox 19+ */
+	opacity: 0;
+}
+.input_box .input-base:focus:-ms-input-placeholder { /* IE 10+ */
+	opacity: 0;
+}
+.input_box .input-base:focus:-moz-placeholder { /* Firefox 18- */
+	opacity: 0;
+}
+.icon {
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	fill: currentColor;
+}
+.icon-calendar {
+	font-size: 2.4rem;
+	width: 1em;
+}
+.input_box-icon {
+	position: absolute;
+	top: 13px;
+	font-size: 24px;
+	z-index: 3;
+	color: #999999;
+	-webkit-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+	-ms-touch-action: none;
+	touch-action: none;
+	pointer-events: none;
+}
+.input_box-icon.is_right_icon {
+	right: 13px;
+}
+.input_box:hover .input_box-icon.is_right_icon, .input_box:focus .input_box-icon.is_right_icon {
+	color: #6bbd96;
+}

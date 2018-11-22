@@ -1,0 +1,16 @@
+.breadcrumbs {
+	display: flex;
+
+	&__item {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		margin-right: 25px;
+	}
+
+	&__item:not(:last-child)::after {
+		content: '>';
+		position: absolute;
+		right: -15px;
+	}
+}

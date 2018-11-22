@@ -1,0 +1,21 @@
+tags:
+- Game Result
+description: Add Result to existing game
+parameters:
+- name: game_id
+  type: integer
+  in: path
+  required: true
+- name: home_team_goals
+  in: formData
+  description: Home team scored goals
+  type: integer
+  required: true
+- name: guest_team_goals
+  in: formData
+  description: Guest team scored goals
+  type: integer
+  required: true
+responses:
+  '201':
+    description: Create Game result

@@ -1,0 +1,8 @@
+Django==2.1.2
+djangorestframework==3.8.2
+psycopg2-binary==2.7.5
+coreapi
+pygments
+markdown
+google-api-python-client
+oauth2client

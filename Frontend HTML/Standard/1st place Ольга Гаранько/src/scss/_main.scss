@@ -1,0 +1,108 @@
+html{
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 1.28em;
+}
+body{
+	margin: 0;
+	padding: 0;
+	color: $textColor;
+	font-family: $mainFont, "Arial", sans-serif;
+	min-width: 320px;
+	background-color: $bgColor;
+}
+a{
+	color: $textColor;
+	text-decoration: none;
+}
+a:hover{
+	color: $textColor;
+	text-decoration: none;
+}
+body * {
+	box-sizing: border-box;
+	outline: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+}
+p{
+	padding: 0 0 20px 0;
+	margin: 0;
+}
+h1{
+	@include fsize(36px);
+	font-weight: 700;
+	letter-spacing: 3.6px;
+	margin: 0;
+	padding: 0 0 25px 0;
+	line-height: 1.4em;
+	color: $textColor;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Times New Roman";
+}
+h2{
+	@include fsize(26px);
+	font-weight: 700;
+	margin: 0;
+	padding: 0 0 25px 0;
+	line-height: 1.4em;
+	color: $textColor;
+}
+h3{
+	@include fsize(20px);
+	font-weight: 400;
+	margin: 0;
+	padding: 20px 0 10px 0;
+	line-height: 1.4em;
+	color: $textColor;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+button:focus{
+	outline: none;
+}
+button{
+	background-color: transparent;
+	border: 0 none;
+	padding: 0;
+}
+.btn{
+	font-family: $mainFont, "Arial", sans-serif;
+	border: 1px solid $textColor;
+	background-color: $textColor;
+	padding: 10px 12px;
+	margin: 5px 0;
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	color: $bgColor;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: color .2s ease-out, border-color .3s ease-out,background .3s ease-out 0s, opacity .2s ease-out .2s;
+}
+.btn.warning{
+	background-color: red;
+	border: 1px solid red;
+}
+.btn:hover {
+	color: $textColor;
+	background-color: $bgColor;
+}
+a.btn:hover{
+	text-decoration: none;
+}
+.main {
+	max-width: 1200px;
+	margin: 0 auto;
+}

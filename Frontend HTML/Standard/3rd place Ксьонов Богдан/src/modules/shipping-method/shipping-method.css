@@ -1,0 +1,22 @@
+.shipping-method {
+	margin-bottom: 21px;
+
+	&__card {
+		.card__radio + .card__label {
+			width: 100%;
+		}
+
+		.card__text {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.card__description {
+			font-size: 1.3rem;
+		}
+
+		.card__price {
+			margin-left: auto;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+$screen-xs:   669px;
+$screen-sm:   768px;
+$screen-md:   992px;
+$screen-lg:   1024px;
+
+$white: #ffffff;
+$white-two:#f5f5f5;
+$black: #000;
+$black-two: #212121;
+$grey: #f0f0f0;
+$grey-payment:#fafafa;
+$yellow: #fff5c3;
+$yellow-two: #928230;
+$yellow-three: #edd870;
+$blue: #0ec4b6;
+$blue-two: #1990c6;
+$red:#ff1c1c;
+
+$time: .3s;
+$time-half: $time / 2;
+$time-double: $time * 2;
+
+$font: 'Opensans', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+$font-additional: 'Roboto';
+
+$light: 300; 
+$regular: 400;
+$medium: 500; 
+$semi-bold: 600; 
+$bold: 700;
+$super-bold: 900;

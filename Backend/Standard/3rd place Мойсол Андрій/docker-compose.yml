@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  web:
+    restart: always
+    build:
+      context: .
+      dockerfile: misc/docker/Dockerfile
+    command: /bin/bash -c "python3 misc/wait-for.py && python3 project/manage.py migrate && python3 project/manage.py loaddata misc/users.json && python3 project/manage.py runserver 0.0.0.0:8080"
+    volumes:
+      - .:/code
+    env_file:
+      - misc/docker/postgres.env
+      - misc/docker/web.env
+    environment:
+      - DEBUG=True
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+  db:
+    restart: always
+    image: postgres
+    env_file:
+      - misc/docker/postgres.env
+    environment:
+      - PGDATA=/var/lib/postgresql/data/pgdata
+    volumes:
+      - ./.docker_data/postgresql:/var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"

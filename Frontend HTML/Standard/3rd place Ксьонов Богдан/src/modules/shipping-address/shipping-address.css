@@ -1,0 +1,13 @@
+.shipping-address {
+	&__card {
+		margin-bottom: 21px;
+		
+		.card__content {
+			padding: 0;
+		}
+
+		.card__grid {
+			margin-bottom: 30px;
+		}
+	}
+}

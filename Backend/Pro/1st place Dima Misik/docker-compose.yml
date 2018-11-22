@@ -1,0 +1,15 @@
+version: "3"
+services:
+    web:
+        build: .
+        ports:
+            - "8080:80"
+        depends_on:
+            - db
+        environment:
+            - ASPNETCORE_ENVIRONMENT=Docker
+    db:
+        image: "microsoft/mssql-server-windows-express"
+        environment:
+            SA_PASSWORD: "Your_password123"
+            ACCEPT_EULA: "Y"

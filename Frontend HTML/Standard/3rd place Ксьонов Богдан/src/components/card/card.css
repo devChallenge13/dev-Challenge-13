@@ -1,0 +1,99 @@
+$border-color: #d9d9d9 !default;
+$background: #fafafa !default;
+
+.card {
+	border: 1px solid $border-color;
+	border-radius: 6px;
+
+	&_no-border {
+		border: none;
+	}
+	
+	&__content {
+		padding: 16px 17px 23px 17px;
+
+		&_darker {
+			background: $background;
+		}
+	}
+
+	&__item {
+		padding: 16px 17px;
+
+		&_underlined {
+			border-bottom: 1px solid $border-color;
+		}
+	}
+
+	&__property {
+		margin-right: 38px;
+	}
+
+	&__change {
+		float: right;
+	}
+
+	&__input[type="text"], &__select {
+		position: relative;
+		width: 100%;
+	}
+
+	&__radio {
+		display: none;
+	}
+
+	&__radio + &__label {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+
+	&__radio + &__label::before {
+		content: '';
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 18px;
+		height: 18px;
+		margin-right: 12px;
+		border: 1px solid $border-color;
+		border-radius: 100%;
+	}
+
+	&__radio:checked + &__label::before {
+		background: $btn-color;
+	}
+
+	&__radio:checked + &__label::after {
+		content: '';
+		position: absolute;
+		left: 6.9px;
+		width: 4px;
+		height: 4px;
+		border-radius: 100%;
+		background: #fff;
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__checkbox + &__label {
+		position: relative;
+		padding-left: 30px;
+	}
+
+	&__checkbox + &__label::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		border: 1px solid $border-color;
+		border-radius: 4px;	
+	}
+
+	&__checkbox:checked + &__label::before {
+		background: rgba(#000, .2);	
+	}
+}

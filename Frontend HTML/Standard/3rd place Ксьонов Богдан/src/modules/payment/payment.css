@@ -1,0 +1,14 @@
+.payment {
+	margin-bottom: 45px;
+
+	&__card {
+		.card__title {
+			display: inline-flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 21px 17px;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}

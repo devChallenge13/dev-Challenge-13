@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example_pass
+      POSTGRES_DB: tournaments
+
+  app:
+    build: .
+    depends_on:
+      - db
+    volumes:
+      - ./:/app
+    ports:
+      - "8080:80"
+    environment:
+      FLASK_APP: 'main.py'
+      FLASK_DEBUG: 1

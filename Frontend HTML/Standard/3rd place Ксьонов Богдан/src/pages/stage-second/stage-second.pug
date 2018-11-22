@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+		title Document
+		link(rel="stylesheet", href="css/main.min.css")
+		link(rel="stylesheet", href="css/stage-second.min.css")
+	body
+		.wrapper
+			.container
+				.flex.flex_no-gap.flex-column-reverse-992
+					include ../../modules/unifo/unifo.pug 
+					+unifo('< Return to customer information', 'Continue to payment method')
+						ul.breadcrumbs.unifo__breadcrumbs
+							li.breadcrumbs__item
+								a(href="#").breadcrumbs__link Cart
+							li.breadcrumbs__item
+								a(href="#").breadcrumbs__link Customer information
+							li.breadcrumbs__item.breadcrumbs__item_active Shipping method
+							li.breadcrumbs__item Payment method
+						include ../../modules/all-information/all-information.pug
+						+information
+							.card__item
+								span.card__property Contact
+								span.card__value +380 99 999 9999
+								a(href="#").card__change Change
+							.card__item
+								span.card__property Ship to
+								span.card__value ', asasds, ASASSDSA, Ukraine
+								a(href="#").card__change Change
+						include ../../modules/shipping-method/shipping-method.pug
+					include ../../modules/side-cart/side-cart.pug

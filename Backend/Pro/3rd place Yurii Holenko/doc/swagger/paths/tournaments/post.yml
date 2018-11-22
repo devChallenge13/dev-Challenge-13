@@ -1,0 +1,18 @@
+tags:
+- Tournament
+description: Create Tournament
+parameters:
+  - name: tournament_name
+    type: string
+    in: formData
+    required: false
+  - name: team_names[]
+    in: formData
+    description: Team names
+    type: array
+    items:
+      type: string
+    required: true
+responses:
+  '201':
+    description: Create tournament with schedule

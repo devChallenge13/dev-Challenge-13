@@ -1,0 +1,46 @@
+.unifo {
+	width: 100%;
+	padding-top: 60px;
+
+
+	&__breadcrumbs {
+		margin-bottom: 31px;
+	}
+
+	&__card {
+		margin-bottom: 50px;
+
+		.card__content {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+		
+		.card__property {
+			color: $secondary-color;
+		}
+
+		.card__item {
+			padding: 0;
+		}
+
+		.card__item:not(:last-child) {
+			margin-bottom: 16px;
+			padding-bottom: 16px;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 56px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.unifo {
+		width: 58.18%;
+		padding-right: 66px;
+	}
+}

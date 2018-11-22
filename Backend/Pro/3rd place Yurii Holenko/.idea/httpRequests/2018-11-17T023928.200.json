@@ -1,0 +1,34 @@
+[
+  {
+    "team_name": "B",
+    "games_played": 3,
+    "game_win": 0,
+    "games_draw": 0,
+    "games_losed": 3,
+    "scores": 0
+  },
+  {
+    "team_name": "C",
+    "games_played": 2,
+    "game_win": 0,
+    "games_draw": 1,
+    "games_losed": 1,
+    "scores": 1
+  },
+  {
+    "team_name": "A",
+    "games_played": 2,
+    "game_win": 2,
+    "games_draw": 0,
+    "games_losed": 0,
+    "scores": 6
+  },
+  {
+    "team_name": "D",
+    "games_played": 3,
+    "game_win": 2,
+    "games_draw": 1,
+    "games_losed": 0,
+    "scores": 7
+  }
+]

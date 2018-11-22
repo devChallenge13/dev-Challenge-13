@@ -1,0 +1,16 @@
+@import '../../commons/variables.css';
+
+@import '../../components/heading/heading.css';
+@import '../../components/card/card.css';
+@import '../../components/container/container.css';
+@import '../../components/breadcrumbs/breadcrumbs.css';
+@import '../../components/button/button.css';
+@import '../../components/dropdown/dropdown.css';
+@import '../../components/background/background.css';
+@import '../../components/foreground/foreground.css';
+
+@import '../../modules/unifo/unifo.css';
+@import '../../modules/all-information/all-information.css';
+@import '../../modules/side-cart/side-cart.css';
+@import '../../modules/shipping-method/shipping-method.css';
+@import '../../modules/footer/footer.css';

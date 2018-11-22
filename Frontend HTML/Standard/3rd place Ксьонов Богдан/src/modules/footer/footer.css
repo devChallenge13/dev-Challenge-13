@@ -1,0 +1,5 @@
+.footer {
+	padding-top: 19px;
+	border-top: 1px solid $border-color;
+	color: $secondary-color;
+}

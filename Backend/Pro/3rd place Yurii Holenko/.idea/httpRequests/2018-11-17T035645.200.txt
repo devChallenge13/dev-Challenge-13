@@ -1,0 +1,5 @@
+team_name,games_played,game_win,games_draw,games_losed,scores
+D,3,2,1,0,7
+A,2,2,0,0,6
+C,2,0,1,1,1
+B,3,0,0,3,0

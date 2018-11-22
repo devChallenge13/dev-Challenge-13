@@ -1,0 +1,38 @@
+.app-wrapper {
+}
+
+.map-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.control-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.control-panel .buttons {
+    margin-top: 20px;
+}
+
+.control-panel .buttons button {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.guestions {
+    margin-bottom: 15px;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.timmer-wrapper {
+    font-size: 20px;
+    text-align: center;
+}

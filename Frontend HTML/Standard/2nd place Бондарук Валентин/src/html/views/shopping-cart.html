@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="description" content="DevChallenge">
+  <link rel="icon" type="image/x-icon" href="https://devchallenge.it/media/media/1101_favicon-devchallenge.ico">
+  <title>DEV Challenge</title>
+  <link rel="stylesheet" href="css/style.bundle.css">
+</head>
+<body class="body__shopping-cart">
+
+<!-- header -->
+<%= _.template(require('./../includes/header.html'))(data) %>
+<!-- header -->
+
+<!-- main -->
+<main class="cart">
+  <div class="cart__item">
+    <div class="image">
+      <img class="image__item" src="img/item1.png" alt="item photo"/>
+    </div>
+    <div class="item mrg-btm-xxl mrg-top-xxl">
+      <span class="item__name">Dagacci Medical Uniform Womens Medical Scrub</span>
+      <span class="item__type mrg-top-lg "><i class="txt-bold">Product type:</i> Honeywell</span>
+      <span class="item__vendor mrg-top-sm"><i class="txt-bold">Vendor:</i> InoMed</span>
+      <span class="item__weight mrg-top-sm"><i class="txt-bold">Weight:</i> 0.0 kg</span>
+      <button class="item__remove mrg-top-lg">Remove</button>
+    </div>
+
+    <div class="price">
+
+      <span class="price__min">325.00$</span>
+
+      <div>
+        <div class="number">
+          <i class="number__minus number__change">-</i>
+          <input class="number__value" type="number" id="numberFirst">
+          <i class="number__plus number__change">+</i>
+        </div>
+        <button class="number__update">Update</button>
+      </div>
+
+      <span class="price__max">325.00$</span>
+
+    </div>
+  </div>
+
+  <div class="cart__item">
+    <div class="image">
+      <img class="image__item" src="img/item1.png" alt="item photo"/>
+    </div>
+    <div class="item mrg-btm-xxl mrg-top-xxl">
+      <span class="item__name">Dagacci Medical Uniform Womens Medical Scrub</span>
+      <span class="item__type mrg-top-lg "><i class="txt-bold">Product type:</i> Honeywell</span>
+      <span class="item__vendor mrg-top-sm"><i class="txt-bold">Vendor:</i> InoMed</span>
+      <span class="item__weight mrg-top-sm"><i class="txt-bold">Weight:</i> 0.0 kg</span>
+      <button class="item__remove mrg-top-lg">Remove</button>
+    </div>
+
+    <div class="price">
+
+      <span class="price__min">325.00$</span>
+
+      <div>
+        <div class="number">
+          <i class="number__minus number__change">-</i>
+          <input class="number__value" type="number" id="numberSecond">
+          <i class="number__plus number__change">+</i>
+        </div>
+        <button class="number__update">Update</button>
+      </div>
+
+      <span class="price__max">325.00$</span>
+
+    </div>
+  </div>
+
+  <div class="cart__item">
+    <div class="image">
+      <img class="image__item" src="img/item1.png" alt="item photo"/>
+    </div>
+    <div class="item mrg-btm-xxl mrg-top-xxl">
+      <span class="item__name">Dagacci Medical Uniform Womens Medical Scrub</span>
+      <span class="item__type mrg-top-lg "><i class="txt-bold">Product type:</i> Honeywell</span>
+      <span class="item__vendor mrg-top-sm"><i class="txt-bold">Vendor:</i> InoMed</span>
+      <span class="item__weight mrg-top-sm"><i class="txt-bold">Weight:</i> 0.0 kg</span>
+      <button class="item__remove mrg-top-lg">Remove</button>
+    </div>
+
+    <div class="price">
+
+      <span class="price__min">325.00$</span>
+
+      <div>
+        <div class="number">
+          <i class="number__minus number__change">-</i>
+          <input class="number__value" type="number" id="numberThird">
+          <i class="number__plus number__change">+</i>
+        </div>
+        <button class="number__update">Update</button>
+      </div>
+
+      <span class="price__max">325.00$</span>
+
+    </div>
+  </div>
+
+  <div class="result pdg-top-lg pdg-btm-lg">
+    <div class="result__description">
+      <span>Total weight</span>
+      <span>Total price</span>
+    </div>
+
+    <div class="result__value">
+      <span>26.01 lb</span>
+      <span class="result__value_price">$1,037.00</span>
+    </div>
+
+  </div>
+
+  <div class="note pdg-top-lg">
+    <label class="note__title" for="add-note">Add a note to you order</label>
+    <textarea class="note__area" id="add-note">
+    </textarea>
+    <div class="note__warning pdg-top-md pdg-btm-md pdg-l-md mrg-top-md mrg-btm-md">
+      Unifo process all orders in USD. Shipping & taxes calculated at checkout.
+    </div>
+  </div>
+
+  <div class="btn pdg-top-lg pdg-btm-lg">
+    <button class="btn__continue">Continue shopping</button>
+    <button class="btn__proceed">Proceed to checkout</button>
+  </div>
+</main>
+<!-- main -->
+
+</body>
+</html>
