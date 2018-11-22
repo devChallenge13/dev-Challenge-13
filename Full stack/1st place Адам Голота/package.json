@@ -1,0 +1,25 @@
+{
+  "name": "reactexpress",
+  "version": "1.0.0",
+  "description": "Pointing/planning poker implementation",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install && npm run build",
+    "start": "node server.js",
+    "start-all": "concurrently \"node server.js\" \"node kettle.js\" \"node thermostat.js\" \"node toaster.js\"",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Adam Golota",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.14.6"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1",
+    "express": "^4.16.2",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1"
+  }
+}
